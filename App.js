@@ -1,20 +1,54 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 const App = () => {
   return (
-    <View style={{flex : 1, 
+
+  <View style={{ flex:1}}>
+   
+   <View style={{
+    flex:1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 100
+   }}>
+
+    <View style={{
+       background:'red', width:150, height:100,
+       justifyContent: 'center',
+       borderRadius: 10,
+      
+       
+   }}>
+    <Text style={{
+      fontSize: 20, color: 'white',
+      textAlign: 'center',
+      fontWeight: 'bold'
     }}>
-      <View style={{ flex : 1, flexDirection:"row", backgroundColor: 'yellow'}}>
-        <View style={{ flex : 1, flexDirection: 1, backgroundColor: 'yellow'}}>
-        </View>
-        <View style={{ flex : 1, flexDirection: 1, backgroundColor: 'green'}}>
-        </View>
-      </View>
-      <View style={{ flex : 1, backgroundColor: 'red'}}>
-    </View>
-    <View style={{ flex : 1, backgroundColor: 'blue'}}>
-    </View>
-  </View>
+      Login
+    </Text>
+    
+   </View>  
+   <View style={{
+       background:'red', width:150, height:100,
+       justifyContent: 'center',
+       borderRadius: 10,
+      
+       
+   }}>
+    <Text style={{
+      fontSize: 20, color: 'white',
+      textAlign: 'center',
+      fontWeight: 'bold'
+    }}>
+      Login
+    </Text>
+   </View>
+   </View>
+   </View>
+   
+   
+   
+  
   )
 }
 export default App
