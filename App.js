@@ -1,54 +1,24 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
-import React from 'react'
+import React from "react";
+import { View, Image, StyleSheet} from 'react-native';
+
 const App = () => {
   return (
+    <View style={styles.container}>
+      <Image source={require('./assets/bulan.png')} style={styles.image} />
+    </View>
+  );
+};
 
-  <View style={{ flex:1}}>
-   
-   <View style={{
-    flex:1,
-    alignItems: 'center',
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
     justifyContent: 'center',
-    marginBottom: 100
-   }}>
+    alignItems: 'center',
+  },
+  image: {
+    width: 100,
+    height: 100,
+  },
+});
 
-    <View style={{
-       background:'red', width:150, height:100,
-       justifyContent: 'center',
-       borderRadius: 10,
-      
-       
-   }}>
-    <Text style={{
-      fontSize: 20, color: 'white',
-      textAlign: 'center',
-      fontWeight: 'bold'
-    }}>
-      Login
-    </Text>
-    
-   </View>  
-   <View style={{
-       background:'red', width:150, height:100,
-       justifyContent: 'center',
-       borderRadius: 10,
-      
-       
-   }}>
-    <Text style={{
-      fontSize: 20, color: 'white',
-      textAlign: 'center',
-      fontWeight: 'bold'
-    }}>
-      Login
-    </Text>
-   </View>
-   </View>
-   </View>
-   
-   
-   
-  
-  )
-}
-export default App
+export default App;
