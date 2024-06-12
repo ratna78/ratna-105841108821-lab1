@@ -5,23 +5,24 @@ import { Button } from "react-native-web";
 
 
 const App = () => {
-  const buttonCostum = ({color , text}) => {
+  const ButtonCostum = ({color , text}) => {
 
   
-  return (
-    <View style={{
+    return (
+     <View style={{
       backgroundColor: color,
       width: 120,
       height: 80,
       borderRadius: 20,
       justifyContent: 'center'
     }}>
-      <Text style={{
-        textAlign: 'center',
-        fontSize: 30,
-        color: 'white',
-        fontWeight: 'bold'
-      }}>{text}</Text>
+        <Text style={{
+          textAlign: 'center',
+          fontSize: 30,
+          color: 'white',
+          fontWeight: 'bold'
+      }}>{text}
+      </Text>
     </View>
   );
 };
@@ -35,7 +36,7 @@ const App = () => {
       <Text style={{
         fontSize: 50,
         fontWeight: 'bold'
-      }}>Big Bird</Text>
+      }}>Bulan</Text>
  </View>
  <View style={{
   flex: 1,
