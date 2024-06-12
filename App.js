@@ -1,24 +1,62 @@
 import React from "react";
 import { View, Image, StyleSheet} from 'react-native';
+import { Button } from "react-native-web";
+
+
 
 const App = () => {
+  const buttonCostum = ({color , text}) => {
+
+  
   return (
-    <View style={styles.container}>
-      <Image source={require('./assets/bulan.png')} style={styles.image} />
+    <View style={{
+      backgroundColor: color,
+      width: 120,
+      height: 80,
+      borderRadius: 20,
+      justifyContent: 'center'
+    }}>
+      <Text style={{
+        textAlign: 'center',
+        fontSize: 30,
+        color: 'white',
+        fontWeight: 'bold'
+      }}>{text}</Text>
     </View>
   );
 };
+ return (
+  <View style={{ flex: 1}}>
+    <View style={{
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+      <Text style={{
+        fontSize: 50,
+        fontWeight: 'bold'
+      }}>Big Bird</Text>
+ </View>
+ <View style={{
+  flex: 1,
+  alignItems: 'center',
+  justifyContent : 'center'
+ }}>
+<Image source={require('./bulan.png')} />
+</View>
 
-const styles = StyleSheet.create({
-  container: {
+<View style={{
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  image: {
-    width: 100,
-    height: 100,
-  },
-});
+    justifyContent: 'space-evenly',
+    flexDirection: 'row'
+  }}>
+    <ButtonCostum color='green' text='Login'/>
+    <ButtonCostum color='green' text='SignUp'/>
+
+  </View>
+  </View>
+)}
 
 export default App;
